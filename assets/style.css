@@ -6,42 +6,55 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+/*ajout*/
 .top-header {
-	background-color: white;
+	width: 100%;
+	margin: auto;
 	position: sticky;
-	top:0;
-	z-index: 1000;
-	display: flex;
-	justify-content: space-between;
-	padding-inline: 100px;
-	padding-block: 30px;
-	align-items: center;
-}
-
-.top-header .name {
-	font-size: 26px;
-}
-
-.nav ul {
-	display: flex;
-	list-style-type: none;
-	font-size: 14px;
-	margin-bottom: 0;
-}
-
-.nav li {
-	padding-inline: 10px;
-}
-
-.nav a {
+	top: 0;
+	z-index: 3;
+  }
+  
+  .top-header h1 {
+	min-width: 175px;
+  }
+  
+  .top-header h1 a {
 	text-decoration: none;
-	color: #000
-}
+	color: inherit;
+  }
+  
+  .container-fluid.top-header-navbar {
+	padding: 10px 5.2vw 10px 5.2vw;
+  }
+  
+  .top-header nav {
+	min-height: var(--navbar-height);
+  }
+  
+  .navbar-menu li {
+	padding: 0 5px 0 5px;
+  }
+  
+  .navbar-nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .navbar-nav a {
+	color: #000;
+  }
 
-.social-link img {
-	width: 20px;
-	height: 20px; /*ajout*/
+  .navbar-toggler:hover {
+    text-decoration: none;
 }
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem;
+}
+/* fin ajout*/
 
 #about {
 	display: flex;
@@ -318,6 +331,14 @@ input[type="submit"] {
 	}
 }
 
+
+
+
+
+
+
+
+
 @media all and (max-width: 650px) {
 	.top-header {
 		flex-direction: column;
@@ -353,3 +374,40 @@ input[type="submit"] {
 	}
 }
 
+
+
+@media (max-width: 767px) {
+	.navbar .nav-item {
+	  display: flex;
+	  min-height: 63px;
+	  align-items: center;
+	  transform: scale(1.2);
+	}
+  
+	#a-propos {
+	  bottom: 391px;
+	}
+  
+	#galerie {
+	  bottom: 362px;
+	}
+  
+	#services {
+	  bottom: 390px;
+	}
+  
+	#contact {
+	  bottom: 390px;
+	}
+  }
+  
+  @media (max-width: 600px) {
+	#services-section ~ .quote {
+	  max-width: 75%;
+	}
+  
+	.quote {
+	  max-width: 89%;
+	}
+  }
+  

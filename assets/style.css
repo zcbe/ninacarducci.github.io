@@ -6,6 +6,12 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
+h1 {
+	margin-bottom: 0 !important;
+	font-weight: 400;
+	font-size: 1.61em;
+  }
 /*ajout*/
 .top-header {
 	width: 100%;
@@ -49,12 +55,27 @@ body {
   .navbar-toggler:hover {
     text-decoration: none;
 }
-.navbar-toggler:focus {
-    text-decoration: none;
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem;
+/*ajout*/
+.nav ul {
+	display: flex;
+	list-style-type: none;
+	font-size: 14px;
+	margin-bottom: 0;
 }
-/* fin ajout*/
+/*ajout*/
+.nav li {
+	padding-inline: 10px;
+}
+/*ajout*/
+.nav a {
+	text-decoration: none;
+	color: #000
+}
+/*ajout*/
+.social-link img {
+	width: 20px;
+	height: 20px; /*ajout*/
+}
 
 #about {
 	display: flex;
@@ -105,6 +126,7 @@ body {
 	font-size: 14px;
 }
 
+
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -112,6 +134,7 @@ body {
 .gallery .nav {
 	justify-content: center;
 }
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #000; /* noir au lieu de blanc*/
 	background-color: #BEB45A;
@@ -330,7 +353,6 @@ input[type="submit"] {
 		z-index: -1;
 	}
 }
-
 
 
 

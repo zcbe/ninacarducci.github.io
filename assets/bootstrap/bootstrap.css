@@ -669,6 +669,14 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
+/*ajouter*/
+@media (max-width: 576px) {
+  .row{
+    flex-wrap: nowrap;
+    flex-direction:column;
+    align-items:center;
+  }
+}
 .row > * {
   flex-shrink: 0;
   width: 100%;
@@ -779,8 +787,16 @@ progress {
 
 .col-12 {
   flex: 0 0 auto;
-  width: 100%;
+  width: 33%; /* 100% -> 33%*/
 }
+
+/*ajout pour gallery colonne version mobile*/
+@media (max-width: 1000px) {    
+  .col-12 {
+   width: 100%;
+}
+}
+
 
 .offset-1 {
   margin-left: 8.33333333%;
@@ -3917,7 +3933,13 @@ textarea.form-control-lg {
   margin-bottom: 0;
   list-style: none;
 }
-
+/*ajout code pour filtre en colonne*/
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  }
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
@@ -4014,7 +4036,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  /*ajout*/
+  /*ajout menu hamburger*/
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 1.25rem;

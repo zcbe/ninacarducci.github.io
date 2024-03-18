@@ -433,3 +433,36 @@ input[type="submit"] {
 	}
   }
   
+
+  footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: black ;
+	padding: 1rem 10%;
+  }
+  
+  .footer-col {
+	width: 100%;
+	max-width: 300px;
+	margin-bottom: 20px;
+  }
+
+ 
+  
+  footer a {
+	text-decoration: none;
+	color: white;
+	
+  }
+
+  footer p {
+	margin-bottom: 0;
+	color: white;
+  }
+
+  footer h2 {
+	text-align: left;
+	margin-bottom: 1rem;
+	color: white;
+  }

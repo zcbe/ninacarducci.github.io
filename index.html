@@ -15,16 +15,14 @@
       name="description"
       content="Nina Carducci, photographe professionnelle à Bordeaux, vous propose l'opportunité de saisir ces merveilleux mommentsd'une vie au travers de son regard et de sa technique "
     />
-    <!--ajout-->
+    <!--Ajout  Mots-clés pour le référencement-->
     <meta
       name="keywords"
       content="photographe, services photo, retouche photo,albums photo"
     />
-    <!-- ajout de mots clés -->
+    <!-- Ajout Icône du site -->
     <link rel="icon" href="./assets/images/favicon.ico" />
-    <!-- ajout  -->
-
-    <!-- Google Fonts  -->
+    <!-- Liens vers les polices Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,13 +30,11 @@
       rel="stylesheet"
     />
 
-    <!-- CSS -->
+    <!-- CSS ajout fichier minifié -->
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-    <!-- utiliser le fichier minifié -->
     <link rel="stylesheet" href="./assets/style.min.css" />
-    <!-- utiliser le fichier minifié -->
 
-    <!--  Ajout Open Graph data Facebook   -->
+    <!-- Ajout Balises Open Graph pour le partage sur Facebook -->
     <meta
       property="og:title"
       content="Nina Carducci - Photographe professionnelle à Bordeaux"
@@ -57,7 +53,7 @@
       property="og:description"
       content="Nina Carducci, photographe professionnelle basée à Bordeaux, vous propose l'opportunité de saisir ces merveilleux moments d'une vie."
     />
-    <!--  Ajout Twitter Card data  -->
+    <!-- Ajout Balises Twitter Card pour le partage sur Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@ninacarducci" />
     <meta
@@ -72,7 +68,7 @@
       name="twitter:image"
       content="https://raw.githubusercontent.com/zcbe/ninacarducci.github.io/Mybranch/assets/images/nina.webp"
     />
-    <!--  Ajout Schema.org   -->
+    <!-- Ajout Données structurées Schema.org pour le référencement -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -101,15 +97,14 @@
     </script>
   </head>
   <body>
-    <header class="top-header bg-white">
-      <!-- ajout navbar avec menu hamburger pour petit écran -->
-      <nav class="navbar navbar-expand-md">
+    <header class="top-header bg-white">       <!-- Entête de la page -->
+      <nav class="navbar navbar-expand-md"> 
+      <!-- Logo et titre de la page -->
         <div class="container-fluid top-header-navbar">
           <h1>
-            <a href="#" class="trigger-navbar-collapse-onclick"
-              >Nina Carducci</a
-            >
+            <a href="#" class="trigger-navbar-collapse-onclick">Nina Carducci</a>
           </h1>
+      <!-- Ajout Bouton pour le menu sur mobile -->
           <button
             aria-label="Bouton de la barre de navigation"
             class="navbar-toggler"
@@ -124,6 +119,7 @@
             id="navbar-hamburger-killswitch"
             style="width: 100%"
           >
+      <!-- Contenu de la barre de navigation -->
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#about">À propos</a>
@@ -151,16 +147,17 @@
       </nav>
     </header>
 
+    <!-- Ajout de la balise main pour contenir le contenu principal de la page -->
     <main>
-      <!-- ajout de la balise main-->
-
-      <div id="header">
+      <div id="header">       <!-- Section du header contenant le carrousel d'images -->
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
           data-bs-ride="carousel"
         >
           <div class="carousel-indicators">
+          <!-- Boutons indicateurs pour chaque image du carrousel -->
+          <!-- Chaque bouton est associé à un numéro de slide -->
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
@@ -184,16 +181,18 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-
+            <!-- Ajout Balise <picture> pour gérer plusieurs sources d'images -->
               <picture>
                 <source
                   srcset="
-                    ./assets/images/slider/nicholas-green-concert-618.webp"
+                    ./assets/images/slider/nicholas-green-concert-618.webp
+                  "
                   media="(max-width: 480px)"
                 />
                 <source
                   srcset="
-                    ./assets/images/slider/nicholas-green-concert-1000.webp"
+                    ./assets/images/slider/nicholas-green-concert-1000.webp
+                  "
                   media="(max-width: 1000px)"
                 />
                 <img
@@ -202,15 +201,13 @@
                   alt="Photo d'un public bruyant prise par Nicholas Green"
                   width="440"
                   height="440"
-                  
-                /><!-- ajout du alt + chgt format image png->webp -->
+                /> <!-- Ajout de Alt pour l'accessibilité et format webp -->
+
               </picture>
             </div>
 
-
-
-
             <div class="carousel-item">
+          <!-- Ajout Balise <picture> pour gérer plusieurs sources d'images -->
               <picture>
                 <source
                   srcset="
@@ -231,13 +228,12 @@
                   loading="lazy"
                   width="440"
                   height="440"
-                /><!-- ajout du alt + chgt format image png->webp -->
+                /><!-- Ajout de Alt pour l'accessibilité et format webp -->
               </picture>
             </div>
 
-
-
             <div class="carousel-item">
+          <!-- Ajout Balise <picture> pour gérer plusieurs sources d'images -->
               <picture>
                 <source
                   srcset="
@@ -258,13 +254,11 @@
                   loading="lazy"
                   width="440"
                   height="440"
-                /><!-- ajout du alt + chgt format image png->webp -->
+                /><!-- Ajout de Alt pour l'accessibilité et format webp -->
               </picture>
             </div>
 
-
-
-            
+          <!-- Contrôles du carrousel (précédent/suivant) -->
             <button
               class="carousel-control-prev"
               type="button"
@@ -292,34 +286,37 @@
           </div>
         </div>
       </div>
+
+
+<!-- Ajout Section "À propos" (remplace la Div) -->
+
       <section id="about">
-        <!-- div -> section-->
         <div class="picture left">
-          <picture>
+          <!-- Ajout Balise <picture> pour gérer plusieurs sources d'images -->
+            <picture>
             <source
-            srcset="./assets/images/nina.webp"
-            media="(max-width: 480px)"
-          />
-          <img
-            src="./assets/images/nina.webp"
-            alt="Portrait de Nina Carducci"
-            height="169px"
-            width="169px"
-          />
-        </picture>
-
-
+              srcset="./assets/images/nina.webp"
+              media="(max-width: 480px)"
+            />
+             <!-- Ajout de Alt et dimension de l'image -->
+            <img
+              src="./assets/images/nina.webp"
+              alt="Portrait de Nina Carducci"
+              height="169"
+              width="169"
+            />
+          </picture>
         </div>
         <div id="about-me">
-          <h2 class="about-me__title">A propos de moi</h2>
-          <!-- h3 -> h2 -->
+         <!-- Ajout de h2 à la place de h3 -->
+          <h2 class="about-me__title">A propos de moi</h2> 
+        <!-- Ajout de p à la place de h6 -->
           <p class="about-me__introduction">
             Devenir photographe était pour moi une évidence. Comme si j’y étais
             prédestiné. Saisir un moment, une émotion, une situation, un
             endroit, une lumière et les rendre immortels, voilà ce qui me fait
             vibrer.
           </p>
-          <!--h6 -> p-->
           <p>
             Nous passons notre vie à chercher le bonheur, et lorsque nous y
             touchons, nous n’avons qu’une envie : le figer au travers de
@@ -334,8 +331,9 @@
         </div>
       </section>
 
-      <!--ajout loading ="lazy" + mise en page-->
+  <!--Ajout  de section gallery loading ="lazy" + mise en page + alt, style, changement de format de l'image et dimension pour chaque images-->
       <section id="gallery">
+      <!-- Ajout de h2 à la place de h3 -->
         <h2 class="title">Portfolio</h2>
         <div class="container py-3">
           <div class="container py-3" id="gallery-one">
@@ -371,7 +369,7 @@
                 width="440"
                 height="440"
                 loading="lazy"
-              /><!-- ajout du alt + chgt format image png->webp -->
+              />
               <img
                 data-gallery-tag="Entreprises"
                 class="gallery-item"
@@ -380,7 +378,7 @@
                 width="440"
                 height="440"
                 loading="lazy"
-              /><!-- ajout du alt + chgt format image png->webp -->
+              />
               <img
                 data-gallery-tag="Mariages"
                 class="gallery-item"
@@ -389,7 +387,7 @@
                 width="440"
                 height="440"
                 loading="lazy"
-              /><!-- ajout du alt + chgt format image png->webp -->
+              />
               <img
                 data-gallery-tag="Portrait"
                 class="gallery-item"
@@ -398,7 +396,7 @@
                 width="440"
                 height="440"
                 loading="lazy"
-              /><!-- ajout du alt + chgt format image png->webp -->
+              />
               <img
                 data-gallery-tag="Mariages"
                 class="gallery-item"
@@ -407,7 +405,7 @@
                 width="440"
                 height="440"
                 loading="lazy"
-              /><!-- ajout du alt + chgt format image png->webp -->
+              />
               <img
                 data-gallery-tag="Portrait"
                 class="gallery-item"
@@ -416,7 +414,7 @@
                 width="440"
                 height="440"
                 loading="lazy"
-              /><!-- ajout du alt + chgt format image png->webp -->
+              />
               <img
                 data-gallery-tag="Concert"
                 class="gallery-item"
@@ -425,7 +423,7 @@
                 width="440"
                 height="440"
                 loading="lazy"
-              /><!-- ajout du alt + chgt format image png->webp -->
+              />
               <img
                 data-gallery-tag="Entreprises"
                 class="gallery-item"
@@ -434,15 +432,17 @@
                 width="440"
                 height="440"
                 loading="lazy"
-              /><!-- ajout du alt + chgt format image png->webp -->
+              />
             </div>
           </div>
         </div>
       </section>
 
+    <!-- Citation -->
       <div class="quote">
         <figure>
           <blockquote>
+             <!-- Ajout de span à la place de h1 -->
             <span class="quote__text"
               >Un portrait n’est pas une ressemblance. Dès lors qu’une émotion
               ou qu’un fait est traduit en photo, il cesse d’être un fait pour
@@ -450,15 +450,16 @@
               Toutes les photos sont exactes. Aucune d’elles n’est la
               vérité.</span
             >
-            <!-- h1 -> span -->
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
+
+  <!-- Ajout Section "Services" (remplace la Div) -->
+    
       <section id="services">
-        <!-- div -> section-->
+     <!-- Ajout de h2 à la place de h3 -->
         <h2 class="title">Mes services</h2>
-        <!-- h3 -> h2 -->
         <div class="container">
           <div class="service">
             <div class="service__description">
@@ -470,8 +471,8 @@
               </p>
             </div>
             <div class="service__price">
+            <!-- Ajout de h3 à la place de h4 -->
               <h3>350€/demi journée</h3>
-              <!-- h4 -> h3-->
               <span>Matériel, déplacement inclus</span>
             </div>
           </div>
@@ -485,8 +486,8 @@
               </p>
             </div>
             <div class="service__price">
+              <!-- Ajout de h3 à la place de h4 -->
               <h3>50€/photo</h3>
-              <!-- h4 -> h3-->
               <span>2 AR par photo</span>
             </div>
           </div>
@@ -499,8 +500,8 @@
               </p>
             </div>
             <div class="service__price">
+            <!-- Ajout de h3 à la place de h4 -->
               <h3>400€ album A4</h3>
-              <!-- h4 -> h3-->
               <span>30 pages recto/verso</span>
             </div>
           </div>
@@ -509,51 +510,52 @@
       <div class="quote">
         <figure>
           <blockquote>
+          <!-- Ajout de span à la place de h1 -->
             <span class="quote__text"
               >De manière inconsciente, je crois, je guette un regard, une
               expression, des traits ou une nostalgie capable de résumer ou plus
               exactement de révéler une vie</span
             >
-            <!-- h1 -> span-->
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
 
+
+  <!-- Ajout Section "Contact" (remplace la Div) -->
+    
       <section id="contact">
-        <!-- div -> section-->
         <div class="container">
           <div class="form-container">
+          <!-- Ajout de h2 à la place de h3 -->
             <h2>Une question ? Une demande de devis ?</h2>
-            <!-- h3 -> h2-->
             <p>
               N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24
               heures
             </p>
+            <!-- Ajout de #-->
             <form action="#" method="post">
-              <!-- ajout de #-->
+              <!-- Ajout de for="nom"-->
               <label for="nom">Nom</label>
-              <!-- ajout de for="nom"-->
-
+              <!-- Ajout de aria-albelledby (visible que par les technologies d'assistance)-->
               <input type="text" name="nom" id="nom" aria-labelledby="nom" />
-              <!-- ajout de aria-albelledby (visible que par les technologies d'assistance)-->
+              <!-- Ajout de for="email"-->
               <label for="email">Email</label>
-              <!-- ajout de for="email"-->
+              <!-- Ajout de aria-albelledby -->
               <input
                 type="email"
                 name="email"
                 id="email"
                 aria-labelledby="email"
               />
-              <!-- ajout de aria-albelledby -->
+               <!-- Ajout de for="message"-->
               <label for="message">Message</label>
-              <!-- ajout de for="message"-->
+               <!-- ajout de aria-albelledby et suppression de  cols="30" rows="10"-->
               <textarea
                 name="message"
                 id="message"
                 aria-labelledby="message"
               ></textarea>
-              <!-- ajout de aria-albelledby et suppression de  cols="30" rows="10"-->
               <input type="submit" value="Envoyer" />
               <!-- suppression du / enfin de ligne -->
             </form>
@@ -563,11 +565,13 @@
               src="./assets/images/camera.webp"
               alt="Image d'un apareil photo"
               loading="lazy"
-            /><!-- ajout du alt + chgt format image png->webp -->
+            /><!-- Ajout du alt + changement de format image png->webp -->
           </div>
         </div>
       </section>
     </main>
+
+  <!-- Ajout du Footer -->
 
     <footer>
       <div class="footer-col">
@@ -592,10 +596,10 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-    <!-- ajout defer + utilisier le fichier minifié-->
+    <!-- Ajout defer + utilisier le fichier minifié-->
     <script defer src="./assets/maugallery.min.js"></script>
-    <!-- ajout defer + utilisier le fichier minifié-->
+    <!-- Ajout defer + utilisier le fichier minifié-->
     <script defer src="./assets/scripts.min.js"></script>
-    <!-- ajout defer + utilisier le fichier minifié-->
+    <!-- Ajout defer + utilisier le fichier minifié-->
   </body>
 </html>

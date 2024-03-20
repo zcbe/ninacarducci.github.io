@@ -870,7 +870,7 @@ progress {
   /* 100% -> 33%*/
 }
 
-/*ajout pour gallery colonne version mobile*/
+/*Ajout pour gallery colonne version mobile*/
 @media (max-width: 1000px) {
   .col-12 {
     width: 100%;
@@ -4480,7 +4480,7 @@ fieldset:disabled .btn {
   list-style: none;
 }
 
-/*ajout code pour filtre en colonne*/
+/*Ajout code pour filtre en colonne*/
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
@@ -4596,7 +4596,7 @@ fieldset:disabled .btn {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  /*ajout menu hamburger*/
+  /*Ajout menu hamburger*/
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 1.25rem;
@@ -4605,7 +4605,7 @@ fieldset:disabled .btn {
   --bs-navbar-toggler-border-radius: 0.375rem;
   --bs-navbar-toggler-focus-width: 0.25rem;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
-  /*fin ajout*/
+  /*fin Ajout*/
 
 }
 
@@ -4659,7 +4659,7 @@ fieldset:disabled .btn {
   align-items: center;
 }
 
-/* ajout menu hamburger */
+/* Ajout menu hamburger */
 .navbar-toggler {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
@@ -4692,7 +4692,7 @@ fieldset:disabled .btn {
   background-size: 100%;
 }
 
-/* fin ajout menu hamburger */
+/* Fin ajout menu hamburger */
 
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
@@ -4827,10 +4827,10 @@ fieldset:disabled .btn {
     display: none;
   }
 
-  /*ajout*/
+  
   .navbar-expand-md .offcanvas {
-    position: static;
-    z-index: auto;
+    position: static; /*Ajout static à la place de inherit*/
+    z-index: auto;   /*Ajout auto à la place de 1000*/
     flex-grow: 1;
     width: auto !important;
     height: auto !important;

@@ -27,9 +27,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
+      rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" fetchpriority="high"
     />
-
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
+    </noscript>
+  
     <!-- CSS ajout fichier minifié -->
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.min.css" />
@@ -97,14 +100,17 @@
     </script>
   </head>
   <body>
-    <header class="top-header bg-white">       <!-- Entête de la page -->
-      <nav class="navbar navbar-expand-md"> 
-      <!-- Logo et titre de la page -->
+    <header class="top-header bg-white">
+      <!-- Entête de la page -->
+      <nav class="navbar navbar-expand-md">
+        <!-- Logo et titre de la page -->
         <div class="container-fluid top-header-navbar">
           <h1>
-            <a href="#" class="trigger-navbar-collapse-onclick">Nina Carducci</a>
+            <a href="#" class="trigger-navbar-collapse-onclick"
+              >Nina Carducci</a
+            >
           </h1>
-      <!-- Ajout Bouton pour le menu sur mobile -->
+          <!-- Ajout Bouton pour le menu sur mobile -->
           <button
             aria-label="Bouton de la barre de navigation"
             class="navbar-toggler"
@@ -119,7 +125,7 @@
             id="navbar-hamburger-killswitch"
             style="width: 100%"
           >
-      <!-- Contenu de la barre de navigation -->
+            <!-- Contenu de la barre de navigation -->
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#about">À propos</a>
@@ -149,15 +155,16 @@
 
     <!-- Ajout de la balise main pour contenir le contenu principal de la page -->
     <main>
-      <div id="header">       <!-- Section du header contenant le carrousel d'images -->
+      <div id="header">
+        <!-- Section du header contenant le carrousel d'images -->
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
           data-bs-ride="carousel"
         >
           <div class="carousel-indicators">
-          <!-- Boutons indicateurs pour chaque image du carrousel -->
-          <!-- Chaque bouton est associé à un numéro de slide -->
+            <!-- Boutons indicateurs pour chaque image du carrousel -->
+            <!-- Chaque bouton est associé à un numéro de slide -->
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
@@ -181,10 +188,10 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-            <!-- Ajout Balise <picture> pour gérer plusieurs sources d'images -->
+              <!-- Ajout Balise <picture> pour gérer plusieurs sources d'images -->
               <picture>
                 <source
-                    srcset="
+                  srcset="
                     ./assets/images/slider/nicholas-green-concert-618.webp
                   "
                   media="(max-width: 480px)"
@@ -199,20 +206,19 @@
                   alt="Photo d'un public bruyant prise par Nicholas Green"
                   width="440"
                   height="440"
-                /> <!-- Ajout de Alt pour l'accessibilité et format webp -->
-
+                />
+                <!-- Ajout de Alt pour l'accessibilité et format webp -->
               </picture>
             </div>
 
             <div class="carousel-item">
-          <!-- Ajout Balise <picture> pour gérer plusieurs sources d'images -->
+              <!-- Ajout Balise <picture> pour gérer plusieurs sources d'images -->
               <picture>
                 <source
                   srcset="
                     ./assets/images/slider/edward-cisneros-mariage-618.webp
                   "
                   media="(max-width: 480px)"
-
                   srcset="
                     ./assets/images/slider/edward-cisneros-mariage-1000.webp
                   "
@@ -230,14 +236,13 @@
             </div>
 
             <div class="carousel-item">
-          <!-- Ajout Balise <picture> pour gérer plusieurs sources d'images -->
+              <!-- Ajout Balise <picture> pour gérer plusieurs sources d'images -->
               <picture>
                 <source
                   srcset="
-                  ./assets/images/slider/ryoji-iwata-entreprise-618.webp
-                "
+                    ./assets/images/slider/ryoji-iwata-entreprise-618.webp
+                  "
                   media="(max-width: 480px)"
-
                   srcset="
                     ./assets/images/slider/ryoji-iwata-entreprise-1000.webp
                   "
@@ -254,7 +259,7 @@
               </picture>
             </div>
 
-          <!-- Contrôles du carrousel (précédent/suivant) -->
+            <!-- Contrôles du carrousel (précédent/suivant) -->
             <button
               class="carousel-control-prev"
               type="button"
@@ -283,18 +288,17 @@
         </div>
       </div>
 
-
-<!-- Ajout Section "À propos" (remplace la Div) -->
+      <!-- Ajout Section "À propos" (remplace la Div) -->
 
       <section id="about">
         <div class="picture left">
           <!-- Ajout Balise <picture> pour gérer plusieurs sources d'images -->
-            <picture>
+          <picture>
             <source
               srcset="./assets/images/nina-375.webp"
               media="(max-width: 480px)"
             />
-             <!-- Ajout de Alt et dimension de l'image -->
+            <!-- Ajout de Alt et dimension de l'image -->
             <img
               src="./assets/images/nina.webp"
               alt="Portrait de Nina Carducci"
@@ -304,9 +308,9 @@
           </picture>
         </div>
         <div id="about-me">
-         <!-- Ajout de h2 à la place de h3 -->
-          <h2 class="about-me__title">A propos de moi</h2> 
-        <!-- Ajout de p à la place de h6 -->
+          <!-- Ajout de h2 à la place de h3 -->
+          <h2 class="about-me__title">A propos de moi</h2>
+          <!-- Ajout de p à la place de h6 -->
           <p class="about-me__introduction">
             Devenir photographe était pour moi une évidence. Comme si j’y étais
             prédestiné. Saisir un moment, une émotion, une situation, un
@@ -327,9 +331,9 @@
         </div>
       </section>
 
-  <!--Ajout  de section gallery loading ="lazy" + mise en page + alt, style, changement de format de l'image et dimension pour chaque images-->
+      <!--Ajout  de section gallery loading ="lazy" + mise en page + alt, style, changement de format de l'image et dimension pour chaque images-->
       <section id="gallery">
-      <!-- Ajout de h2 à la place de h3 -->
+        <!-- Ajout de h2 à la place de h3 -->
         <h2 class="title">Portfolio</h2>
         <div class="container py-3">
           <div class="container py-3" id="gallery-one">
@@ -434,11 +438,11 @@
         </div>
       </section>
 
-    <!-- Citation -->
+      <!-- Citation -->
       <div class="quote">
         <figure>
           <blockquote>
-             <!-- Ajout de span à la place de h1 -->
+            <!-- Ajout de span à la place de h1 -->
             <span class="quote__text"
               >Un portrait n’est pas une ressemblance. Dès lors qu’une émotion
               ou qu’un fait est traduit en photo, il cesse d’être un fait pour
@@ -451,10 +455,10 @@
         </figure>
       </div>
 
-  <!-- Ajout Section "Services" (remplace la Div) -->
-    
+      <!-- Ajout Section "Services" (remplace la Div) -->
+
       <section id="services">
-     <!-- Ajout de h2 à la place de h3 -->
+        <!-- Ajout de h2 à la place de h3 -->
         <h2 class="title">Mes services</h2>
         <div class="container">
           <div class="service">
@@ -467,7 +471,7 @@
               </p>
             </div>
             <div class="service__price">
-            <!-- Ajout de h3 à la place de h4 -->
+              <!-- Ajout de h3 à la place de h4 -->
               <h3>350€/demi journée</h3>
               <span>Matériel, déplacement inclus</span>
             </div>
@@ -496,7 +500,7 @@
               </p>
             </div>
             <div class="service__price">
-            <!-- Ajout de h3 à la place de h4 -->
+              <!-- Ajout de h3 à la place de h4 -->
               <h3>400€ album A4</h3>
               <span>30 pages recto/verso</span>
             </div>
@@ -506,7 +510,7 @@
       <div class="quote">
         <figure>
           <blockquote>
-          <!-- Ajout de span à la place de h1 -->
+            <!-- Ajout de span à la place de h1 -->
             <span class="quote__text"
               >De manière inconsciente, je crois, je guette un regard, une
               expression, des traits ou une nostalgie capable de résumer ou plus
@@ -517,13 +521,12 @@
         </figure>
       </div>
 
+      <!-- Ajout Section "Contact" (remplace la Div) -->
 
-  <!-- Ajout Section "Contact" (remplace la Div) -->
-    
       <section id="contact">
         <div class="container">
           <div class="form-container">
-          <!-- Ajout de h2 à la place de h3 -->
+            <!-- Ajout de h2 à la place de h3 -->
             <h2>Une question ? Une demande de devis ?</h2>
             <p>
               N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24
@@ -544,9 +547,9 @@
                 id="email"
                 aria-labelledby="email"
               />
-               <!-- Ajout de for="message"-->
+              <!-- Ajout de for="message"-->
               <label for="message">Message</label>
-               <!-- ajout de aria-albelledby et suppression de  cols="30" rows="10"-->
+              <!-- ajout de aria-albelledby et suppression de  cols="30" rows="10"-->
               <textarea
                 name="message"
                 id="message"
@@ -557,24 +560,24 @@
             </form>
           </div>
           <div class="picture right">
-          <!-- Ajout Balise <picture> pour gérer plusieurs sources d'images -->
-              <picture>
-                <source
-                  srcset="./assets/images/camera-320.webp"
-                  media="(max-width: 480px)"
-                />
-            <img
-              src="./assets/images/camera.webp"
-              alt="Image d'un apareil photo"
-              loading="lazy"
-            /><!-- Ajout du alt + changement de format image png->webp -->
-              </picture>
+            <!-- Ajout Balise <picture> pour gérer plusieurs sources d'images -->
+            <picture>
+              <source
+                srcset="./assets/images/camera-320.webp"
+                media="(max-width: 480px)"
+              />
+              <img
+                src="./assets/images/camera.webp"
+                alt="Image d'un apareil photo"
+                loading="lazy"
+              /><!-- Ajout du alt + changement de format image png->webp -->
+            </picture>
           </div>
         </div>
       </section>
     </main>
 
-  <!-- Ajout du Footer -->
+    <!-- Ajout du Footer -->
 
     <footer>
       <div class="footer-col">

@@ -465,13 +465,13 @@ input[type="submit"] {
 	#galerie {
 		bottom: 362px;
 	}
-
+/*ajout modification marge bottom*/
 	#services {
-		bottom: 390px;
+		bottom: 10px;
 	}
-
+/*ajout modification marge bottom*/
 	#contact {
-		bottom: 390px;
+		bottom: 0px;
 	}
 }
 
